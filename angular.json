@@ -3,5 +3,39 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ngrx-lazy": {
+      "projectType": "library",
+      "root": "projects/ngrx-lazy",
+      "sourceRoot": "projects/ngrx-lazy/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngrx-lazy/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngrx-lazy/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngrx-lazy/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngrx-lazy/src/test.ts",
+            "tsConfig": "projects/ngrx-lazy/tsconfig.spec.json",
+            "karmaConfig": "projects/ngrx-lazy/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
   }
 }
