@@ -1,12 +1,22 @@
 {
   "name": "ngrx-lazy",
-  "version": "0.0.1",
+  "version": "14.0.0",
+  "description": "Dead simple data lazy loading for @ngrx state management",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Odonno/ngrx-lazy.git"
+  },
+  "author": "Odonno",
+  "bugs": {
+    "url": "https://github.com/Odonno/ngrx-lazy/issues"
+  },
+  "homepage": "https://github.com/Odonno/ngrx-lazy#readme",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
   "peerDependencies": {
     "@angular/common": "^14.1.0",
     "@angular/core": "^14.1.0",
     "@ngrx/store": "^14.2.0"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0"
   }
 }
