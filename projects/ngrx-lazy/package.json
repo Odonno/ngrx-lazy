@@ -1,6 +1,6 @@
 {
   "name": "ngrx-lazy",
-  "version": "14.0.0",
+  "version": "14.0.1",
   "description": "Dead simple data lazy loading for @ngrx state management",
   "repository": {
     "type": "git",

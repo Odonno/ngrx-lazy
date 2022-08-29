@@ -14,6 +14,19 @@ To fully understand how to use this library, we'll go through an example of a pr
 
 ### Lazy state
 
+A lazy state is made of several properties:
+
+```ts
+type Lazy<T> = {
+  fetched: boolean;
+  pending: boolean;
+  error?: any;
+  data: T;
+};
+```
+
+You can then use the `createLazy` function to initialize your feature state.
+
 ```ts
 import { createLazy, Lazy } from "ngrx-lazy";
 import { Brand } from "./models";
@@ -29,7 +42,7 @@ export const initialBrandsState: BrandsState = {
 };
 ```
 
-There, we create two lazy loadable array of brands inside our brands feature state.
+In this example, we create two lazy loadable array of brands inside our brands feature state.
 
 ### Lazy reducers
 
