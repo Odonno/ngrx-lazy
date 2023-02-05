@@ -1,8 +1,8 @@
 # ngrx-lazy
 
-Dead simple data lazy loading for @ngrx state management.
+Dead simple data lazy loading for [@ngrx](https://github.com/ngrx) state management.
 
-Inspired by the early work of @Synthx
+Inspired by the early work of [@Synthx](https://github.com/Synthx)
 
 ## Get started
 
